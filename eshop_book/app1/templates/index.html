@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Wa course | home page</title>
+</head>
+<body>
+
+<h1>Hello,Django</h1>
+<h2>All books!</h2>
+<a href="\calculator\">Calculator</a>
+<a href="\about\">About</a>
+<image src = "http://acmilanfan.ru/images/squad/703.jpg"></image>
+{% for book in all_books%}
+
+
+<div>
+
+    <p>title - {{ book.title }} </p>
+    <p>price - {{ book.price }}$ </p>
+    <p>description - {{ book.description  }} </p>
+
+</div>
+{% endfor %}
+</html>
